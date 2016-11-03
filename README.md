@@ -1,6 +1,6 @@
 # SharpTools
 
-*A little toolset I put together in 2009 for Web Development in C# for the Oneflyer.ca project*
+*A little toolset I put together in 2009 for Web Development in C# for the One flyer project*
 
 * CloningControl
   * CloneEngine
