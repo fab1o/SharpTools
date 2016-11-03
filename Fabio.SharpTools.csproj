@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{926287B4-6F94-448A-A3C8-2F1716491824}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Fabio.SharpTools</RootNamespace>
+    <AssemblyName>Fabio.SharpTools</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Convertion\UnitConvertor.cs" />
+    <Compile Include="Diagnostics\OperationTimer.cs" />
+    <Compile Include="Encryption\JavaScriptMinifier.cs" />
+    <Compile Include="Linq\PredicateBuilder.cs" />
+    <Compile Include="Mathematic\PowerSet.cs" />
+    <Compile Include="Search\AhoCorasick.cs" />
+    <Compile Include="Search\BoyerMoore.cs" />
+    <Compile Include="CloningControl\CloneEngine.cs" />
+    <Compile Include="Convertion\Convertor.cs" />
+    <Compile Include="Convertion\Extented.cs" />
+    <Compile Include="Globalization\DateTimeTools.cs" />
+    <Compile Include="Emailing\Mailer.cs" />
+    <Compile Include="Encryption\Encryptor.cs" />
+    <Compile Include="Exception.cs" />
+    <Compile Include="Imaging\ImageManipulator.cs" />
+    <Compile Include="Imaging\OctreeQuantizer.cs" />
+    <Compile Include="Imaging\Quantizer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Search\IStringSearchAlgorithm.cs" />
+    <Compile Include="Search\RegExpSearch.cs" />
+    <Compile Include="String\CustomStringFormat.cs" />
+    <Compile Include="Extension\StringExtension.cs" />
+    <Compile Include="String\StringManipulator.cs" />
+    <Compile Include="String\StringRandomizer.cs" />
+    <Compile Include="String\StringTruncator.cs" />
+    <Compile Include="String\StringRegexValidator.cs" />
+    <Compile Include="Structures\Tree.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
